@@ -85,9 +85,6 @@ public class LinksAge {
 		}*/
 		String amountsAndNames = (periodsAmount==1) ? periodsAmount + periodsName+" " : ( (periodsAmount>1 )? periodsAmount + periodsName +"s " : "") ;
 		System.out.print(amountsAndNames);
-
-
-
 	}
 
 
