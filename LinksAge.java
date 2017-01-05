@@ -27,7 +27,6 @@ public class LinksAge {
 		//Get current date and install Date type
 	 	Date currentDate  = new Date();
 		Date creationDate = new Date(getFileCreationDate());
-	//	Date creationDate = ft.parse("13.04.1989");// test case
 		//Format date
 		String creationDateFormat = ft.format(creationDate);
 		//Convert to LocalDate type
@@ -61,6 +60,7 @@ public class LinksAge {
 	//Prints neg and equal case and calls timePreiods(int,String).
 	public static void myDays( LocalDate startLocalDate , LocalDate currentLocalDate, String creationDateFormat){
 		Period p = Period.between(startLocalDate, currentLocalDate );
+
 		//Neg case
 		if (p.getYears()<0 || p.getMonths()<0 || p.getDays()<0){
 			System.err.println("Current system time precedes the programs installation date. Please set system  date and time correctly.");
@@ -78,11 +78,6 @@ public class LinksAge {
 	}
 	//Prints int timeAmout string years/months/days
 	public static void timePreiods(int periodsAmount ,String periodsName){
-	/*	if (periodsAmount==1){
-			System.out.print(periodsAmount + periodsName+" ");
-		}else if (periodsAmount>1){
-			System.out.print(periodsAmount + periodsName +"s ");
-		}*/
 		String amountsAndNames = (periodsAmount==1) ? periodsAmount + periodsName+" " : ( (periodsAmount>1 )? periodsAmount + periodsName +"s " : "") ;
 		System.out.print(amountsAndNames);
 	}

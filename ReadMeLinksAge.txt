@@ -12,6 +12,6 @@ Instructions :
 		Response: {{!Action!}}
 		Action: -ret"java" -cp "%AppData%\LINKS\Customization\Scripts\;" LinksAge
 
-	Please note that the file needs to be placed in this folder  %AppData%\LINKS\Customization\Scripts\
+	Please note that the LinksAge.class file needs to be placed in this folder  %AppData%\LINKS\Customization\Scripts\
 
 
